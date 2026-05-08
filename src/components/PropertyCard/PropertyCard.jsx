@@ -27,6 +27,11 @@ export default function PropertyCard({ property }) {
         <div className={styles.badgeRow}>
           <GhostBadge type={primaryHaunting} size="sm" />
         </div>
+        
+        {/* --- NUEVO BANNER CATASTROPHIC --- */}
+        {hauntingRating === 5 && (
+          <div className={styles.catastrophicBanner}>CATASTROPHIC</div>
+        )}
       </div>
 
       <div className={styles.body}>
